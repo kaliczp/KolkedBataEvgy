@@ -12,3 +12,5 @@ ttido <- seq.Date(from = as.Date(paste(ttkezd,"01","01",sep="-")),
                   by = "1 day")
 library(xts)
 Mohács.xts <- xts(Mohács, ttido)
+
+write.zoo(Mohács.xts, "mohacs.tsv", sep = "\t", dec = ",")
