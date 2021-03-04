@@ -13,4 +13,6 @@ ttido <- seq.Date(from = as.Date(paste(ttkezd,"01","01",sep="-")),
 library(xts)
 Mohács.xts <- xts(Mohács, ttido)
 
+Mohácshavi.xts <- apply.monthly(Mohács.xts, mean, na.rm=TRUE)
+
 write.zoo(Mohács.xts, "mohacs.tsv", sep = "\t", dec = ",")
