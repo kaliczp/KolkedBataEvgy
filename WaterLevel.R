@@ -1,4 +1,4 @@
-## Mohács beolvasás 1944, 1945?
+## Mohács beolvasás
 ttdir <- dir("mohacs", "*txt")
 Mohács <- scan(paste0("mohacs/",ttdir[1]))
 for(ttfile in 2:length(ttdir))
