@@ -16,3 +16,5 @@ Mohács.xts <- xts(Mohács, ttido)
 Mohácshavi.xts <- apply.monthly(Mohács.xts, mean, na.rm=TRUE)
 
 write.zoo(Mohács.xts, "mohacs.tsv", sep = "\t", dec = ",")
+write.zoo(Mohácshavi.xts, "mohacshavi.tsv", sep = "\t", dec = ",")
+write.zoo(Mohácshavi.xts, "mohacshavi.csv", sep = ";", dec = ",")
